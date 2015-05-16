@@ -1,12 +1,10 @@
----
-title: 'Reproducible Research: Peer Assessment 1'
-author: "Jizong Liang"
-output: html_document
----
+# Reproducible Research: Peer Assessment 1 
+### author "Jizong Liang"
 date: `r Sys.Date()`
-```{r} global_options, include=FALSE}
+
+```{r, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
-                      echo=FALSE, warning=FALSE, message=FALSE)
+                      echo=TRUE)
 ```
 
 ```{r, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
@@ -17,7 +15,6 @@ library(Hmisc)
 knitr::knit_hooks$set(inline = function(x) {
   knitr:::format_sci(x, 'md')
 })
-
 ```
 
 ### Loading and preprocessing the data
